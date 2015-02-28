@@ -1,1 +1,41 @@
-<p>This is the serch view.</p>
+<div class="page-header">
+  <h3>Standard Form Categorical Syllogism Validator&nbsp; <small>A mouthful I know</small></h3>
+</div>
+<table class='table table-striped table-hover'>
+  <tr>
+    <th>
+    </th>
+    <th>
+      Form & Figure
+    </th>
+    <th>
+      Validity
+    </th>
+    <th>
+      Broken rules
+    </th>
+  </tr>
+  <tr ng-class='{success:syllogism.valid}' ng-switch='syllogism.valid' ng-repeat="syllogism in syllogisms">
+    <td ng-switch-when='true'>
+      &nbsp;<span class='glyphicon glyphicon-thumbs-up'></span>
+    </td>
+    <td ng-switch-when='false'>
+      &nbsp;<span class='glyphicon glyphicon-thumbs-down'></span>
+    </td>
+    <td>
+      {{syllogism.form}}
+    </td>
+    <td ng-switch-when='true'>
+      Valid
+    </td>
+    <td ng-switch-when='false'>
+      Invalid
+    </td>
+    <td ng-switch-when='false'>
+      {{syllogism.brokenRules}}
+    </td>
+    <td ng-switch-when='true'>
+      &nbsp;
+    </td>
+  </tr>
+</table>

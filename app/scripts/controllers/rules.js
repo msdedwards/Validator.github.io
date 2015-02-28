@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name validatorgithubioApp.controller:SearchCtrl
+ * @name validatorgithubioApp.controller:RulesCtrl
  * @description
- * # SearchCtrl
+ * # RulesCtrl
  * Controller of the validatorgithubioApp
  */
 angular.module('validatorgithubioApp')
-  .controller('SearchCtrl', function ($scope) {
+  .controller('RulesCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
